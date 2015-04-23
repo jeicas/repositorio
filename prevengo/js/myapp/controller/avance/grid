@@ -1,0 +1,34 @@
+Ext.define('myapp.controller.avance.AvanceListaController', {
+    extend: 'Ext.app.Controller',
+    views: ['registrar.Avance'],
+     requires: [
+        'myapp.util.Util'
+    ],
+    refs: [
+           
+            {
+              ref: 'GridListaAvance',
+              selector: '#gridListaAvance'
+             } 
+           ],
+    
+    init: function(application) {
+        this.control({
+            "#formAvance button[name=btnGuardar]":{
+                click: this.onClickguardarAvance
+            }
+            
+              }
+             
+
+
+        }); 
+    },   
+
+    
+
+
+    },
+
+
+});
